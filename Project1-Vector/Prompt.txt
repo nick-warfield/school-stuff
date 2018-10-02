@@ -1,0 +1,19 @@
+Create your own Vector class (Vector.java).
+	Vector internal array is Object type (Java Object Class).
+	Inside Vector class beside your own helper methods you must implement
+	insertFront, insertBack, removeFront and removeBack
+	with the following method signature:
+
+		public void insertFront(Object data)
+		public void insertBack(Object date)
+		public Object removeFront()
+		public Object removeBack()
+
+Write your Driver (TimeVector.java) class (Class that contains main method)
+	to separately time in microseconds the above vector operations for
+	100, 1000, 10000 and 100000 items and print the result
+	(Time it takes to perform insertion and deletion).
+	Also, your program needs to print total insertion time and total deletion
+	time for all the insertion and deletion scenarios.
+
+Due Friday by 11:59pm
