@@ -1,0 +1,512 @@
+ranked$is_mega <- FALSE
+replace(ranked, filter(ranked, ranked$dex %in% filter(tiers, tiers$is_mega)$dex)$is_mega, TRUE)
+mutate(ranked, is_mega = replace(ranked, filter(ranked, ranked$dex %in% filter(tiers, tiers$is_mega)$dex)$is_mega, TRUE)
+)
+mutate(ranked, is_mega = replace(ranked, filter(ranked, ranked$dex %in% filter(tiers, tiers$is_mega)$dex)$is_mega, TRUE))
+mutate(ranked, is_mega = replace(ranked, filter(ranked, ranked$dex %in% filter(tiers, tiers$is_mega)$dex), TRUE))
+mutate(ranked, is_mega = replace(ranked, filter(ranked, ranked$dex %in% filter(tiers, tiers$is_mega)$dex)$is_mega, TRUE))
+mutate(ranked, ranked$is_mega = replace(ranked, filter(ranked, ranked$dex %in% filter(tiers, tiers$is_mega)$dex)$is_mega, TRUE))
+ranked %>% mutate(is_mega = replace(filter(dex %in% filter(tiers, tiers$is_mega)$dex)$is_mega, TRUE))
+ranked %>% mutate(is_mega = replace(filter(dex %in% filter(tiers, tiers$is_mega)$dex)$is_mega, values = TRUE))
+filter(ranked, ranked$dex %in% filter(tiers, tiers$is_mega)$dex) %>% View
+filter(ranked, ranked$dex %in% filter(tiers, tiers$is_mega)$dex) -> rows
+rows
+ranked[-rows,] %>% View
+ranked[!rows,] %>% View
+ranked[!rows,]
+ranked[(!rows),]
+ranked[-c(rows),]
+ranked[!rows,]
+?FUN
+rows
+View(rows)
+c(rows)
+ranked[c(rows),]
+ranked[-c(rows),]
+ranked[1,]
+View(ranked[1,])
+View(ranked[c(1,10),])
+fact <- factor(fact, ordered = TRUE)
+fact
+as.numeric(fact[1])
+fct_rev(fact)
+?factor
+?levels
+reorder(fact, 12~1)
+reorder(fact, FUN = 12~1)
+reorder(fact, c(12 ... 1))
+reorder(fact, c(12~1))
+?c
+reorder(fact, c(12:1))
+reorder(fact, c(12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1))
+fact <- factor(fact, ordered = FALSE)
+fact
+fact <- factor(fact, ordered = TRUE)
+fact
+reorder(fact, c(12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1))
+reorder(fact, c(12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1))
+reorder(fact, c(1:12))
+fact[4] < fact[7]
+fact[4] > fact[7]
+fact[4]
+fact[7]
+fact
+reorder(fact, c(1:12))
+fact
+reorder(fact, c(1:12)) -> fact
+fact
+fact[4] < fact[7]
+fact[4]
+fact[7]
+fact[11]
+levels(tiers$tier) <- fact
+levels(tiers$tier)
+levels(tiers$tier)[4] < levels(tiers$tier)[7]
+factor(tiers$tier) <- fact
+tiers$tier <- fact
+levels(tiers$tier)
+library(dplyr)
+View(mon)
+View(mon2)
+View(smogon)
+library(dplyr)
+install.packages("ggplot2")
+library(dplyr)
+library(ggplot2)
+View(unranked)
+View(ranked)
+View(tiers)
+tiers[1]$tier
+tiers$tier[1]
+tiers$tier
+tiers$tier[2]
+[400]
+tiers$tier[400]
+tiers$tier[1]++
+d
+tiers$tier[1] <- tiers$tier[1] + 1
+sum(tiers$tier[1], 1)
+tiers$tier[1] <- ag
+tiers$tier[1] <- fact[1]
+tiers$name[1]
+tiers$tier[1] <- fact[12]
+tiers %>% filter(tier == fact[11])
+tiers %>% filter(tier %in% fact[11])
+tiers %>% filter(tier %in% fact[11]) %>% View
+tiers %>% filter(tier %in% fact) %>% View
+tiers %>% filter(tier == 11) %>% View
+tiers %>% filter(dex == 11) %>% View
+tiers %>% filter(dex == 3) %>% View
+fact
+tiers$tier
+levels(tiers$tier)
+levels(tiers$tier) <- fact
+levels(tiers$tier)
+levels(tiers$tier)$isOrdered
+factor(tiers$tier)
+factor(tiers$tier)$is.ordered
+is.ordered(tiers$tier)
+is.ordered(fact)
+facct
+fact
+factor(tiers$tier)
+levels(tiers$tier)
+?levels
+levels
+factor(tiers$tier) <- fact
+factor(tiers$tier, fact)
+factor(tiers$tier, fact, ordered = TRUE)
+factor(tiers$tier) <- factor(tiers$tier, fact, ordered = TRUE)
+tiers$tier <- factor(tiers$tier, fact, ordered = TRUE)
+levels(tiers$tier)
+View(tiers)
+reorder(tiers$tier, fact)
+reorder(levels(tiers$tier), fact)
+levels(tiers$tier)
+reorder(levels(tiers$tier), fact, order = TRUE)
+levels(tiers$tier)
+reorder(levels(tiers$tier), fact, order = TRUE) -> tiers$tier
+reorder(levels(tiers$tier), fact, order = TRUE) -> levels(tiers$tier)
+levels(tiers$tier)
+tiers$tier <- factor(tiers$tier, levels(fact), ordered = TRUE)
+levels(tiers$tier)
+tiers$tier[1]
+tiers$tier[1] <- fact[11]
+tiers$tier[1]
+for(t in tiers$tier) { levels(tiers$tier)}
+sum(tiers$tier[1], 1)
+tiers$tier[1] + 1
+as.numeric(tiers$tier[1]) + 1
+for(tiers$tier in tiers) { tiers$tier + 1}
+for(tier in tiers) { tiers$tier + 1}
+?for
+f
+help(for)
+for(t in tiers$tier) { t + 1}
+for(t in tiers$tier) { as.numeric(t) + 1}
+for(t in tiers$tier) { as.numeric(t) + 1} use warnings()
+for(t in tiers$tier) { as.numeric(t) + 1} use warnings
+warnings(for(t in tiers$tier) { as.numeric(t) + 1})
+warnings(for(t in tiers$tier) { as.numeric(as.character(t)) + 1})
+for(t in tiers$tier) { as.numeric(as.character(t)) + 1}
+for(t in tiers$tier) { t }
+for(t in tiers$tier) { Print(t) }
+for(t in tiers$tier) { print(t) }
+for(t in tiers$tier) { print(t + 1) }
+for(t in tiers$tier) { print(as.numeric(t) + 1) }
+for(t in tiers$tier) { print(as.numeric(as.character(t)) + 1) }
+for(t in tiers$tier) { print(as.numeric(levels(t)) + 1) }
+for(t in tiers$tier) { print(as.numeric(as.character.factor(t)) + 1) }
+for(t in tiers$tier) { print(as.numeric(levels(t))[t] + 1) }
+for(t in tiers$tier) { print(as.numeric(levels(t)) + 1) }
+for(t in tiers$tier) { print(t) }
+for(t in tiers$tier) { print(as.numeric(levels(t))) }
+for(t in tiers$tier) { print(as.numeric(levels(t))[t]) }
+for(t in tiers$tier) { print(as.numeric(levels(t)[t])) }
+for(t in tiers$tier) { print(as.numeric(levels(t))[1]) }
+for(t in tiers$tier) { print(as.numeric(levels(t))[2]) }
+for(t in tiers$tier) { print(as.numeric(levels(t))) }
+as.numeric(levels(tiers$tier))
+as.numeric(levels(fact))
+tiers$tier[1] == fact[11]
+tiers$tier[1] == fact[12]
+tiers %>% filter(tier == fact[11])
+tiers %>% filter(tier == fact[11]) %>% View
+tiers %>% filter(tier == fact[10]) %>% View
+tiers %>% filter(tier == fact[11]) %>% tier = fact[12]
+tiers %>% filter(tier == fact[11]) %>% fact[12] -> tier
+View(tiers)
+for (t in tiers$tier) { if(t == fact[11]) { t <- fact[12] } }
+View(unranked)
+View(tiers)
+View(tier)
+library(readr)
+pkt <- read_csv("pk_tier.csv", col_types = cols(X42 = col_skip(),
+atk = col_integer(), def = col_integer(),
+dex = col_integer(), gen = col_integer(),
+hp = col_integer(), is_legendary = col_logical(),
+is_mega = col_logical(), sp_atk = col_integer(),
+sp_def = col_integer(), stat_total = col_integer()))
+View(pkt)
+factor(pkt$tier, levels(pkt$tier), ordered = TRUE) %>% View
+View(factor(pkt$tier, levels(pkt$tier), ordered = TRUE))
+View(factor(pkt$tier, ordered = TRUE))
+levels(factor(pkt$tier, ordered = TRUE))
+factor(pkt$tier, ordered = TRUE)[1]
+factor(pkt$tier, levels(factor(pkt$tier)), ordered = TRUE)
+factor(pkt$tier, levels(fact), ordered = TRUE)
+library(dplyr)
+savehistory("~/Projects/School Related/Labs_Math341/PokemonTiers/history.txt")
+factor(pkt$tier, c(1:12), ordered = TRUE)
+factor(pkt$tier, levels = c(1:12), labels = levels(factor(pkt$tier)), ordered = TRUE)
+tier <- levels(factor(pkt$tier))
+reorder(tier, c(1:12))
+fact
+factor(pkt$tier, c("unranked", "pu", "bl4", "nu", "bl3", "ru", "bl2", "uu", "bl", "ou", "uber", "ag"), ordered = TRUE)
+pkt$tier <- factor(pkt$tier, c("unranked", "pu", "bl4", "nu", "bl3", "ru", "bl2", "uu", "bl", "ou", "uber", "ag"), ordered = TRUE)
+rm(fact)
+rm(tier)
+pkt$tier[1]
+factor(pkt$type1, levels(pkt$type1))
+factor(pkt$type1)
+pkt$type1 <- factor(pkt$type1)
+pkt$type2 <- factor(pkt$type2)
+pkt$type2 <- addNA(pkt$type2)
+pkt$type2[1]
+View(pkt)
+levels(factor(pkt$p_male))
+factor(pkt$p_male, ordered = TRUE)
+pkt$p_male <- factor(pkt$p_male, ordered = TRUE)
+pkt$p_male <- addNA(pkt$p_male)
+pkt$p_male[1]
+levels(factor(pkt$capture_rate))
+pkt$experience <- factor(pkt$experience, ordered = TRUE)
+pkt$egg_steps <- factor(pkt$egg_steps, ordered = TRUE)
+levels(factor(pkt$happiness))
+nums <- select_if(pkt, is.numeric)
+View(nums)
+c_nums <- cor(nums)
+View(c_nums)
+plot(nums)
+plot(pkt$tier, pkt$against_fairy)
+plot(pkt$tier, pkt$against_ice)
+plot(pkt$tier, pkt$against_ground)
+plot(pkt$tier, pkt$against_water)
+plot(nums)
+plot(pkt$tier, pkt$stat_total)
+plot(pkt$tier, pkt$atk)
+plot(pkt$tier, pkt$def)
+plot(pkt$tier, pkt$sp_atk)
+plot(pkt$tier, pkt$sp_def)
+plot(pkt$tier, pkt$spd)
+plot(pkt$tier, pkt$hp)
+plot(pkt$stat_total, pkt$tier)
+plot(pkt$hp, pkt$tier)
+plot(pkt$atk, pkt$tier)
+plot(pkt$def, pkt$tier)
+plot(pkt$sp_atk, pkt$tier)
+plot(pkt$sp_def, pkt$tier)
+plot(pkt$hp, pkt$tier)
+boxplot(pkt$stat_total)
+?boxplot
+boxplot(select(pkt, stat_total, hp, atk, def, sp_atk, sp_def, spd))
+boxplot(select(pkt, stat_total, hp, atk, def, sp_atk, sp_def, spd), horizontal = TRUE)
+boxplot(select(pkt, spd, sp_def, sp_atk, def, atk, hp, stat_total), horizontal = TRUE)
+boxplot(select(pkt, spd, sp_def, sp_atk, def, atk, hp, stat_total / 6), horizontal = TRUE)
+boxplot(select(pkt, spd, sp_def, sp_atk, def, atk, hp, stat_total/6)), horizontal = TRUE)
+boxplot(select(pkt, spd, sp_def, sp_atk, def, atk, hp, stat_total/6), horizontal = TRUE)
+boxplot(select(pkt, spd, sp_def, sp_atk, def, atk, hp, pkt$stat_total/6), horizontal = TRUE)
+boxplot(select(pkt, spd, sp_def, sp_atk, def, atk, hp, stat_total/6), horizontal = TRUE)
+pkt %>% select(spd, sp_def, sp_atk, def, atk, hp, stat_total) %>% boxplot()
+pkt %>% select(spd, sp_def, sp_atk, def, atk, hp, stat_total) %>% boxplot(horizontal=TRUE)
+pkt %>% select(spd, sp_def, sp_atk, def, atk, hp, stat_total) %>%boxplot(horizontal=TRUE)
+pkt %>% select(spd, sp_def, sp_atk, def, atk, hp, stat_total) %>%
+stat_total/6 %>% boxplot(horizontal=TRUE)
+select(spd, sp_def, sp_atk, def, atk, hp, stat_total) -> p_stats
+select(pkt, spd, sp_def, sp_atk, def, atk, hp, stat_total) -> p_stats
+transform(p_stats, total = stat_total / 6)
+View(p_stats)
+pkt %>% select(spd, sp_def, sp_atk, def, atk, hp, transform(total = stat_total)) %>% boxplot(horizontal = TRUE)
+pkt %>% select(spd, sp_def, sp_atk, def, atk, hp, transform(pkt, total = stat_total)) %>% boxplot(horizontal = TRUE)
+p_stats <- transform(p_stats, total = stat_total / 6)
+p_stats$stat_total <- NULL
+boxplot(p_stats)
+boxplot(p_stats, horizontal = TRUE)
+plot(p_stats)
+p_stats$total <- pkt$stat_total
+plot(p_stats)
+p_stats$total <- pkt$stat_total / 6
+cor.test(pkt$atk, pkt$def)
+View(pkt)
+keepers <- select(pkt, tier, dex, gen, is_legendary, is_mega, stat_total, type1, type2, weakness, height_m, weight_kg, p_male, capture_rate, experience, egg_steps, happiness)
+View(keepers)
+library(MASS)
+?polr
+min.model <- polr(tier~1, keepers, method = "logistic")
+max.model <- polr(tier~., keepers, method = "logistic")
+fwd.model <- stepAIC(min.model, formula(max.model), direction = "forward")
+bwd.model <- stepAIC(max.model, formula(min.model), direction = "forward")
+bwd.model <- stepAIC(max.model, formula(min.model), direction = "backward")
+summary(fwd.model)
+summary(bwd.model)
+fwd.model$call
+bwd.model$call
+plot(fwd.model)
+?plot
+plot(fwd.model, keepers$stat_total)
+plot(keepers$tiers, keepers$stat_total)
+plot(keepers$tier, keepers$stat_total)
+plot(log(keepers$tier), keepers$stat_total)
+plot(keepers$stat_total, fwd.model$fitted.values)
+fwd.model$zeta
+plot(keepers$stat_total, keepers$tier)
+curve(predict(fwd.model, data.frame(keepers), type="response"), add=TRUE)
+?curve
+curve(predict(fwd.model$model, data.frame(keepers), type="response"), add=TRUE)
+library(ggplot2)
+library(tidyr)
+fwd.model$coefficients
+fwd.model$coefficients -> cff
+View(cff)
+t1 <- select(cff, contains("type1"))
+?contains
+?dplyr::contains
+?select
+?dplyr::select
+t1 <- dplyr::select(cff, contains("type1"))
+t1 <- select(cff, contains("type1"))
+rownames(cff)
+cff[1]
+cff[10]
+cff["type1grass"]
+t1 <- cff["type1dark":"type1water"]
+t1
+cff <- coef(fwd.model)
+cff
+View(cff)
+?coef
+cff <- data.frame(cff)
+?data.frame
+cbind(read.table(text = fwd.model$coefficients), x)
+cff <- coef(fwd.model)
+cbind(read.table(text = cff), x)
+summary(fwd.model)$coefficients
+cff <- summary(fwd.model)$coefficients
+t(cff)
+cff <- t(cff)
+cff["Std. Error"]
+cff[, "Std. Error"]
+cff[, 2]
+cff[2]
+cff[1]
+cff[3]
+cff[4]
+cff[(1:2)]
+cff[(1:3)]
+cff[,2]
+cff[1,2]
+cff[-2]
+View(cff[-2])
+View(cff[-2,])
+View(cff[-(2:3),])
+View(cff[-2,])
+cff <- cff[-2,])
+cff <- cff[-2,]
+View(cff)
+View(cff[-2,])
+View(cff[2,])
+View(cff[1,])
+View(data.frame(cff))
+View(data.frame(cff[1,]))
+cff <- data.frame(cff)
+cff$stat_total
+cff
+View(cff)
+View(cff[1,])
+cff <- cff[1,]
+t1 <- select(cff, contains("type1"))
+t1 <- select(cff, stat_total
+)
+cff
+is.data.frame(cff)
+plot(fwd.model$fitted.values)
+plot(fwd.model$fitted.values, keepers$stat_total)
+plot(fwd.model$fitted.values[1], keepers$stat_total)
+plot(fwd.model$fitted.values[2], keepers$stat_total)
+View(fwd.model$fitted.values)
+predict(fwd.model)
+plot(predict(fwd.model))
+plot(predict(fwd.model), keepers$stat_total)
+plot(keepers$stat_total, predict(fwd.model))
+plot(predict(fwd.model, type = "response"))
+predict(fwd.model, type = "response")
+plot(fitted(fwd.model), keepers$stat_total)
+plot(fitted.values(fwd.model), keepers$stat_total)
+plot(fitted.values(fwd.model))
+qqplot(keepers$stat_total, predict(fwd.model))
+plot(keepers$stat_total, predict(fwd.model))
+plot(keepers$dex, predict(fwd.model))
+plot(keepers$gen, predict(fwd.model))
+plot(keepers$is_legendary, predict(fwd.model))
+plot(keepers$stat_total, predict(fwd.model))
+plot(keepers$stat_total, keepers$tier)
+plot(keepers$type1, predict(fwd.model))
+plot(keepers$weakness, predict(fwd.model))
+plot(keepers$height_m, predict(fwd.model))
+plot(keepers$weight_kg, predict(fwd.model))
+plot(keepers$experience, predict(fwd.model))
+plot(keepers$weakness, jitter(predict(fwd.model)))
+plot(keepers$weakness, jitter(predict(fwd.model), 1))
+?jitter
+plot(keepers$weakness, jitter(as.numeric(predict(fwd.model))))
+plot(keepers$stat_total, jitter(as.numeric(predict(fwd.model))))
+plot(keepers$dex, jitter(as.numeric(predict(fwd.model))))
+plot(keepers$gen, jitter(as.numeric(predict(fwd.model))))
+View(keepers)
+plot(keepers$is_legendary, jitter(as.numeric(predict(fwd.model))))
+plot(keepers$is_mega, jitter(as.numeric(predict(fwd.model))))
+plot(keepers$type1, jitter(as.numeric(predict(fwd.model))))
+plot(keepers$type2, jitter(as.numeric(predict(fwd.model))))
+plot(keepers$weakness, jitter(as.numeric(predict(fwd.model))))
+plot(keepers$height_m, jitter(as.numeric(predict(fwd.model))))
+plot(keepers$weight_kg, jitter(as.numeric(predict(fwd.model))))
+plot(keepers$experience, jitter(as.numeric(predict(fwd.model))))
+plot(keepers$egg_steps, jitter(as.numeric(predict(fwd.model))))
+cor.test(keepers$weight_kg, keepers$height_m)
+View(fwd.model)
+final <- select(keepers, tier, is_legendary, is_mega, stat_total, type1, type2, height_m)
+library(dplyr)
+final <- select(keepers, tier, is_legendary, is_mega, stat_total, type1, type2, height_m)
+library(dplyr)
+library(MASS)
+library(ggplot2)
+final <- select(keepers, tier, is_legendary, is_mega, stat_total, type1, type2, height_m)
+?select
+final <- dplyr::select(keepers, tier, is_legendary, is_mega, stat_total, type1, type2, height_m)
+View(final)
+?polr
+final.model <- polr(tier~., final, method = "logistic")
+summary(final.model)
+summary(fwd.model)
+plot(keepers$stat_total, jitter(as.numeric(predict(final.model))))
+plot(keepers$stat_total, jitter(as.numeric(predict(fwd.model))))
+plot(keepers$is_legendary, jitter(as.numeric(predict(final.model))))
+plot(keepers$is_legendary, jitter(as.numeric(predict(fwd.model))))
+plot(keepers$is_mega, jitter(as.numeric(predict(final.model))))
+plot(keepers$is_mega, jitter(as.numeric(predict(fwd.model))))
+plot(keepers$type1, jitter(as.numeric(predict(final.model))))
+plot(keepers$type1, jitter(as.numeric(predict(fwd.model))))
+plot(keepers$type2, jitter(as.numeric(predict(final.model))))
+plot(keepers$type2, jitter(as.numeric(predict(fwd.model))))
+plot(keepers$height_m, jitter(as.numeric(predict(final.model))))
+plot(keepers$height_m, jitter(as.numeric(predict(fwd.model))))
+plot(keepers$experience, jitter(as.numeric(predict(fwd.model))))
+?predict
+?fitted
+curve(predict(final.model))
+curve(predict(final.model, keepers))
+predict(final.model)
+plot(predict(final.model))
+curve(predict(final.model), keepers$stat_total)
+curve(predict(final.model, x=keepers$stat_total))
+?curve
+curve(predict(final.model))
+curve(predict(final.model, data.frame(keepers$stat_total=x)))
+curve(predict(final.model), type = "response")
+curve(x = predict(final.model), type = "response")
+curve(y = predict(final.model), y = keepers$stat_total, type = "response")
+curve(y = predict(final.model), y = keepers$stat_total, type = "response", ylab = "tier")
+?MASS
+install.packages("ordinal")
+plot(keepers$experience, keepers$stat_total)
+plot(keepers$stat_total, keepers$experience)
+plot(keepers$stat_total, keepers$egg_steps)
+plot(keepers$stat_total, jitter(keepers$egg_steps))
+plot(keepers$stat_total, jitter(as.numeric(keepers$egg_steps)))
+pkt[1,]
+names(pkt)
+levels(pkt$experience)
+levels(pkt$egg_steps)
+View(c_nums)
+View(keepers)
+plot(nums)
+plot(nums)
+plot(pkt$tier, pkt$against_fairy)
+plot(pkt$against_fairy, pkt$tier)
+plot(pkt$against_fairy, jitter(as.numeric(pkt$tier)))
+plot(pkt$against_dark, jitter(as.numeric(pkt$tier)))
+plot(pkt$against_ice, jitter(as.numeric(pkt$tier)))
+plot(pkt$tier, pkt$stat_total)
+?polr
+?stepAIC
+View(bwd.model)
+fwd.model$call
+plot(keepers$experience, jitter(as.numeric(predict(fwd.model))))
+plot(keepers$egg_steps, jitter(as.numeric(predict(fwd.model))))
+plot(keepers$dex, jitter(as.numeric(predict(fwd.model))))
+plot(keepers$gen, jitter(as.numeric(predict(fwd.model))))
+plot(keepers$weakness, jitter(as.numeric(predict(fwd.model))))
+final.model$call
+names(final)
+final.model$terms
+final.model$edf
+final.model$model
+final.model$coefficients
+summary(final.model)
+savehistory("~/Projects/School Related/Labs_Math341/PokemonTiers/history.txt")
+pkt <- read_csv("pk_tier.csv", col_types = cols(X42 = col_skip(),
+atk = col_integer(), def = col_integer(),
+dex = col_integer(), gen = col_integer(),
+hp = col_integer(), is_legendary = col_logical(),
+is_mega = col_logical(), sp_atk = col_integer(),
+sp_def = col_integer(), stat_total = col_integer()))
+View(pkt)
+factor(pkt$tier, levels(pkt$tier), ordered = TRUE) %>% View
+View(factor(pkt$tier, levels(pkt$tier), ordered = TRUE))
+View(factor(pkt$tier, ordered = TRUE))
+levels(factor(pkt$tier, ordered = TRUE))
+factor(pkt$tier, ordered = TRUE)[1]
+factor(pkt$tier, levels(factor(pkt$tier)), ordered = TRUE)
+factor(pkt$tier, levels(fact), ordered = TRUE)
+library(dplyr)
+savehistory("~/Projects/School Related/Labs_Math341/PokemonTiers/history.txt")

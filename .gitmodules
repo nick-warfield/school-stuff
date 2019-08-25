@@ -1,0 +1,15 @@
+[submodule "CS-282-Project1"]
+	path = CS-282-Project1
+	url = /home/nick/Projects/School Related/COMP-282/CS-282-Project1
+[submodule "CS-282-Project2"]
+	path = CS-282-Project2
+	url = /home/nick/Projects/School Related/COMP-282/CS-282-Project2
+[submodule "CS-282-Project3"]
+	path = CS-282-Project3
+	url = /home/nick/Projects/School Related/COMP-282/CS-282-Project3
+[submodule "CS-282-Project4"]
+	path = CS-282-Project4
+	url = /home/nick/Projects/School Related/COMP-282/CS-282-Project4
+[submodule "algebra-blocks"]
+	path = algebra-blocks
+	url = /home/nick/Projects/School Related/COMP-380/algebra-blocks/
