@@ -1,0 +1,30 @@
+Nicholas Warfield
+
+Project: make a pyramid of cubes and a camera
+
+Textures:
+	pixel data gets read from an image, loaded into the graphics card, activated, then drawn as dictated by shaders
+
+Vector Multiplcation:
+	-dot product tells you similar two vectors are, with 0 being perpindicular, +1 being the same vector, and -1 being vectors in opposite directions (assuming normal vectors).
+	-cross product gives you the vector perpinduclar to both input vectors.
+
+Scaling: literally multiplying a vector or matrix by a number
+Translation: How you move a vector from one place to another
+Rotation: easily the most complicated, you really need to get into quaternions to do it justice. Rotations are used to determine the orientation of a 3D object.
+
+Coordinate System:
+	Local: the coordinate system of a 3D object, the axes are aligned with the axes of the object.
+	World: up is up, all 3D objects are oriented relative to the world
+	View: transforming world coordinates to coordinates viewed by the camera
+	Clip: stuff outside the view plane that is not drawn
+
+Projection:
+	Orthographic: preserves angles and lines, usually used for scientific applications or 2D
+	Perspective: how most people are used to seeing
+
+Camera:
+	a viewport with a transform
+
+What I learned:
+	nothing conceptually, just how openGL does stuff

@@ -1,4 +1,4 @@
-@ Calculat23or project
+@ Calculator project
 
 @ Sytem commands
 .equ	SWI_EXIT, 0x11

@@ -1,0 +1,4 @@
+/home/nick/Projects/school-stuff/COMP-465/project1/build/CMakeFiles/edit_cache.dir
+/home/nick/Projects/school-stuff/COMP-465/project1/build/CMakeFiles/lego_tetris.dir
+/home/nick/Projects/school-stuff/COMP-465/project1/build/CMakeFiles/rebuild_cache.dir
+/home/nick/Projects/school-stuff/COMP-465/project1/build/CMakeFiles/glad.dir

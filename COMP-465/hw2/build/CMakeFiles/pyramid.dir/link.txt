@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/pyramid.dir/main.cpp.o  -o pyramid libglad.a /usr/lib/libglfw.so.3.3 -ldl 

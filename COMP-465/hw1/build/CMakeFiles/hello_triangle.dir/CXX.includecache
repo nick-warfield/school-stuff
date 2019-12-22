@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/nick/Projects/school-stuff/COMP-465/hw1/src/main.cpp
+cmath
+-
+iostream
+-
+fstream
+-
+sstream
+-
+string
+-
+glad/glad.h
+-
+GLFW/glfw3.h
+-
+

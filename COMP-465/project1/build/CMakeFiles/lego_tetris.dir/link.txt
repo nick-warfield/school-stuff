@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/lego_tetris.dir/src/main.cpp.o  -o lego_tetris libglad.a /usr/lib/libglfw.so.3.3 -ldl 

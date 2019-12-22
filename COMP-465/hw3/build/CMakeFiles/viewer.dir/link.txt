@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/viewer.dir/Camera.cpp.o CMakeFiles/viewer.dir/Mesh.cpp.o CMakeFiles/viewer.dir/Model.cpp.o CMakeFiles/viewer.dir/Shader.cpp.o CMakeFiles/viewer.dir/main.cpp.o  -o viewer  libglad.a /usr/lib/libglfw.so.3.3 -lassimp -ldl 

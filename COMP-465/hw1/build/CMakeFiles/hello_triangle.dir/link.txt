@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/hello_triangle.dir/main.cpp.o  -o hello_triangle libglad.a /usr/lib/libglfw.so.3.3 -ldl 

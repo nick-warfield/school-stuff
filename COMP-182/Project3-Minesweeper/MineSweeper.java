@@ -444,7 +444,7 @@ public class MineSweeper
 	public static void println(String s) { System.out.println(s); }
 }
 
-
+/*
 public class Cell
 {
 	private int adjCount;
@@ -491,3 +491,4 @@ public class Cell
 		else { return Integer.toString(adjCount); }
 	}
 }
+*/
