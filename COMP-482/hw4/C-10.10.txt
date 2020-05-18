@@ -1,0 +1,22 @@
+# wtf is this problem, who the hell has an enemy list?
+
+Suppose you are organizing a party for a large group of your friends. Your friends
+are pretty opinionated, though, and you don’t want to invite two friends if they
+don’t like each other. So you have asked each of your friends to give you an
+“enemies” list, which identifies all the other people among your friends that they
+dislike and for whom they know the feeling is mutual. Your goal is to invite
+the largest set of friends possible such that no pair of invited friends dislike each
+other. To solve this problem quickly, one of your relatives (who is not one of your
+friends) has offered a simple greedy strategy, where you would repeatedly invite
+the person with the fewest number of enemies from among your friends who is
+not an enemy of someone you have already invited, until there is no one left who
+can be invited. Show that your relative’s greedy algorithm may not always result
+in the maximum number of friends being invited to your party.
+
+A: B, C, D
+B: A, E, F, G
+C: A, E, F, G
+D: A, E, F, G
+E: B, C, D, F, G
+F: B, C, D, E, G
+G: B, C, D, E, F

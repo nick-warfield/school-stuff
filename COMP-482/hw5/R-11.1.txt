@@ -1,0 +1,62 @@
+Characterize each of the following recurrence equations using the master theorem
+(assuming that T(n) = c for n < d, for constants c > 0 and d ≥ 1).
+
+I am 100% doing these wrong
+this is all super wrong, just dunk on it
+i was using the wrong f(n), that's why it's all shit
+
+a. T(n) = 2T(n/2) + log n
+	a = 2; b = 2.
+	f(n) = n^(log(base 2) 2) = n^1 = n
+	case 1) ϵ = 1; n^(log(base 2) (2 - ϵ)) 
+		= n^(1 - 1)
+		= n^(0)
+		= 1
+		f(n) = n != O(1)
+	case 2) k = 0; f(n) log^k n
+		= n(log n)^0
+		= n*1
+		= n
+	n is Θ(n);
+	Therefore: T(n) is Θ(n)
+
+b. T(n) = 8T(n/2) + n^2
+	a = 8; b = 2
+	f(n) = n^(log(base 2) 8) = n^3
+	case 1) ϵ = 1; n^(3 - ϵ)
+		= n^(3 - 1)
+		= n^(2) = n^2
+		f(n) = n^3 != O(n^2)
+	case 2) k = 0; f(n) log^k n
+		= n^3 * (log n)^0
+		= n^3 * 1 = n^3
+	n^3 is Θ(n^3);
+	Therefore: T(n) is Θ(n^3)
+
+c. T(n) = 16T(n/2) + (n log n)^4
+	a = 16; b = 2
+	f(n) = n^(log(base 2) 16) = n^4
+	case 1) n^(4 - 1) = n^3
+		n^4 is not O(n^3)
+	case 2) k = 0; f(n) log^k n
+		n^4 * 1 = n^4
+	n^4 is Θ(n^4);
+	Therefore: T(n) is Θ(n^4)
+
+d. T(n) = 7T(n/3) + n
+e. T(n) = 9T(n/3) + n^3 log n
+
+The Master Theorem:
+Let T(n) = c				if n < d
+Let T(n) = aT(n/b) + f(n)	if n ≥ d
+Let f(n) = n^(log(base b) a)
+
+1. If there is a small constant ϵ > 0, such that f(n) is Big-O(n^(log(base b) a−ϵ)),
+	then T(n) is Θ(n^log(base b) a).
+
+2. If there is a constant k ≥ 0, such that f(n) is Θ(f(n) log^k n),
+	then T(n) is Θ(n^(log(base b) a) log^(k+1) n).
+
+3. If there are small constants ϵ > 0 and δ < 1, 
+	such that f(n) is Ω(n^(log(base b) a−ϵ)) and a*f(n/b) ≤ δ*f(n), for n ≥ d,
+	then T(n) is Θ(f(n)).

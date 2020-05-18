@@ -1,0 +1,5 @@
+Let G be an undirected graph with n vertices and m edges.
+Describe an algorithm running O(n + m) time
+that can determine whether G contains exactly two cycles that have no edges in common.
+
+depth first search + depth first search, could potenentially finish in faster than O(n+m) by detecting a fail condition early

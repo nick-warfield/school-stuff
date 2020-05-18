@@ -1,0 +1,46 @@
+R-1.11
+Q: Give a big-O analysis of Loop1 in Algorithm 1.21.
+A: O(N)
+
+R-1.12
+Q: Give a big-O analysis of Loop2 in Algorithm 1.21.
+A: O(N)
+
+R-1.13
+Q: Give a big-O analysis of Loop3 in Algorithm 1.21.
+A: O(N^2)
+
+R-1.14
+Q: Give a big-O analysis of Loop4 in Algorithm 1.21.
+A: O(N^2)
+
+R-1.15
+Q: Give a big-O analysis of Loop5 in Algorithm 1.21.
+A: O(N^4)
+
+C-1.1
+Q: Describe how to modify the description of the MaxsubFastest algorithm so that, in addition to the value of the maximum subarray summation, it also outputs the indicies j and k that identify the maximum subarray A[j:k].
+A: Go through the sum array backwards. When we find a new maximum, assign k to the index. Then once we find a sum of zero, assign i to the previous index.
+
+C-1.2
+Q: Describe how to modify the MaxsubFastest algorithm so that is uses just a single loop and, instead of computing n+1 different Mt values, it maintians just variable M.
+A: Keep a running total variable and current max variable, then return current max at the end.
+
+A-1.10
+Q: Given an array, A, of n integers, find the longest subarray of A such that all the numbers in that subarray are in sorted order. What is the running time of your method?
+A: O(n)
+
+	current_max = 0
+	sum = 0
+	prev = 0
+	for x in A
+		sum = if prev <= x { max(0, sum + x) } else { 0 }
+		current_max = max(current_max, sum)
+		prev = x
+
+	return current_max
+
+A-1.13
+Q: Suppose you are writing a simulator for a single-elimination sports tournament. There are n teams at the beginning of the tournament and in each round of the tournament teams are paired up and the games for each pair are simulated. Winners progress to the next round and losers are sent home. This continues until a grand champion team is the final winner. Suppose your simulator take O(log(N)) time to process each game. How much time does your simulator take in total?
+	N teams; N/2 + (N/2)/2 + (N/4)/2 ... games
+A: O(N^2*log(N))

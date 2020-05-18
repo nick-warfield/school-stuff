@@ -1,0 +1,7 @@
+Provide an example instance of the fractional knapsack problem where a greedy
+strategy based on repeatedly choosing as much of the highest-benefit item as
+possible results in a suboptimal solution.
+
+Knapsack holds 10kg
+Item 1: (Beneift: $100, Weight: 100kg)
+Item 2: (Benefit: $25, Weight: 1kg)

@@ -1,0 +1,5 @@
+Consider the recurrence equation:
+	T(n) = 2T(n − 1) + 1,
+for n > 1, where T(n) = 1 for n = 1.
+
+Prove that T(n) is O(2^n).

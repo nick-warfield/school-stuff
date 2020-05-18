@@ -1,0 +1,6 @@
+-Xlint
+-sourcepath
+/home/nick/Code/CSUN/COMP-587/assign5/arithmetic/src/main/java/:/home/nick/Code/CSUN/COMP-587/assign5/arithmetic/src/test/java/
+-d
+/tmp/nvimFEd9gM/2
+/tmp/nvimFEd9gM/3/NatGenerator.java

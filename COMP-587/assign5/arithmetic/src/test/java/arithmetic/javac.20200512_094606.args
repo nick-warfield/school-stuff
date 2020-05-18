@@ -1,0 +1,6 @@
+-Xlint
+-sourcepath
+/home/nick/Code/CSUN/COMP-587/assign5/arithmetic/src/main/java/:/home/nick/Code/CSUN/COMP-587/assign5/arithmetic/src/test/java/
+-d
+/tmp/nvimYw5e6v/2
+/tmp/nvimYw5e6v/3/NatPropertiesTest.java

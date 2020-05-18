@@ -1,0 +1,4 @@
+Supply the details of the proof of correctness of the LinkComponents algorithm:
+
+the depth first search algorithm dominates this algorithm, making it's run time O(v + e), which is linear time.
+another way, the algorithm goes through each verticy and each edge once and only once, making its run time O(v + e)

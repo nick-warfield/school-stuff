@@ -1,0 +1,4 @@
+Give an example set of denominations of coins so that a greedy change making
+algorithm will not use the minimum number of coins.
+
+if the denominations are (4, 3, 1), then a greedy algorithm when given a target of 6 will choose (4, 1, 1), while the optimal answer is (3, 3)

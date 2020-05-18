@@ -1,0 +1,17 @@
+Consider the Stooge-sort algorithm, shown below.
+Characterize the running time, T(n), in this case, using a recurrence equation,
+and use the master theorem to determine an asymptotic bound for T(n).
+
+Algorithm StoogeSort(A, i, j):
+Input: An array, A, and two indices, i and j, such that 1 ≤ i ≤ j ≤ n
+Output: Subarray, A[i..j], sorted in nondecreasing order
+    n ← j − i + 1 // The size of the subarray we are sorting
+    if n = 2 then
+        if A[i] > A[j] then
+            Swap A[i] and A[j]
+    else if n > 2 then
+		m ← max{1, ⌊n/4⌋}
+        StoogeSort(A, i, j − m) // Sort the first part
+        StoogeSort(A, i + m, j) // Sort the last part
+        StoogeSort(A, i, j − m) // Sort the first part again
+    return A
